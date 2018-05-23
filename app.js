@@ -7,7 +7,7 @@ var corr = document.getElementById('js-corr');
 var result_container = document.getElementById('js-result');
 var result_number = document.getElementById(('js-result-number'));
 
-button_submit.onclick = function() {
+function calculate() {
     real.classList.remove('is-danger');
     comp.classList.remove('is-danger');
     corr.classList.remove('is-danger');
@@ -34,3 +34,25 @@ button_submit.onclick = function() {
     result_number.innerHTML = result;
     result_container.classList.remove('nodisplay');
 }
+
+button_submit.onclick = function() {
+    calculate();
+};
+
+real.onkeydown = function(e) {
+    if(e.keyCode == 13){
+        calculate();
+    }
+};
+
+comp.onkeydown = function(e) {
+    if(e.keyCode == 13){
+        calculate();
+    }
+};
+
+corr.onkeydown = function(e) {
+    if(e.keyCode == 13){
+        calculate();
+    }
+};
