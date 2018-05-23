@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Korekta spalania
+                </h1>
+
+                <h2 class="subtitle">
+                    Kalkulator BMW E60
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box is-paddingless">
+                        <div class="box-section">
+                            <div class="field">
+                                <label class="label">Spalanie rzeczywiste</label>
+
+                                <div class="control">
+                                    <input id="js-real" class="input" type="number" placeholder="Na przykład 8.5">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-section">
+                            <div class="field">
+                                <label class="label">Spalanie z komputera</label>
+
+                                <div class="control">
+                                    <input id="js-comp" class="input" type="number" placeholder="Na przykład 7.3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-section">
+                            <div class="field">
+                                <label class="label">Stara korekta</label>
+
+                                <div class="control">
+                                    <input id="js-corr" class="input" type="number" placeholder="Na przykład 985">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-section">
+                            <div class="columns is-mobile">
+                                <div class="column">
+                                    <div id="js-count" class="button is-large is-rounded">
+                                        Oblicz
+                                    </div>
+                                </div>
+
+                                <div class="column">
+                                    <div id="js-result" class="nodisplay">
+                                        <div id="js-result-number"></div>
+
+                                        <div class="upper-badge">
+                                            Wynik
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <h2 class="title">
+                            Opis
+                        </h2>
+
+                        <p>
+                            Kalkulator służy do korekty średniego spalania wskazywanego przez komputer pokładowy. Wskazania komputera pokładowego mogą różnić się od rzeczywistych na skutek innego stylu jazdy, zużycia podzespołów, złej korekty i innych czynników.
+                        </p>
+
+                        <p>
+                            Jeżeli Twój komputer pokładowy wskazuje średnie spalanie na poziomie 9 litrów a w rzeczywistości jest to 12 lub 7 lub jakakolwiek inna liczba - ten kalkulator pomoże skorygować wskazania komputera.
+                        </p>
+
+                        <blockquote>
+                            <h5>
+                                Ważna informacja
+                            </h5>
+
+                            <p>
+                                Po wprowadzeniu nowej korekty spalania należy wyzerować średnie spalanie na komputerze. Od tego momentu komputer będzie liczył spalanie według nowej korekty, ale zajmie na pewno kilkaset kilometrów zanim wskazania komputera staną się dokładne.
+                            </p>
+
+                            <p>
+                                 Komputer pokładowy nigdy nie jest w stanie pokazać ze stuprocentową dokładnością spalania silnika ale na pewno dzięki takiej korekcie zwiększy się jego dokładność.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <h2 class="title">
+                            Instrukcja
+                        </h2>
+
+                        Pamiętaj aby liczby dziesiętne wpisywać z kropką, a nie przecinkiem.
+
+                        <ol>
+                            <li>
+                                Zgromadź potrzebne dane. Są to spalanie rzeczywiste, spalanie z komputera i stara korekta komputera.
+                            </li>
+
+                            <li>
+                                Wprowadź wszystkie dane do kalkulatora.
+                            </li>
+
+                            <li>
+                                Kliknij przycisk "Oblicz".
+                            </li>
+
+                            <li>
+                                Otrzymaną liczbę wprowadź w pozycję 19 ukrytego menu.
+                            </li>
+
+                            <li>
+                                Wszystkie średnie spalania na komputerze pokładowym wyzeruj.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="content">
+                        <h2 class="title">
+                            Pomoc
+                        </h2>
+
+                        <p>
+                            Poniżej znajdziesz informacje, które pomogą Ci wypełnić pola kalkulatora.
+                        </p>
+
+                        <ul>
+                            <li>
+                                Spalanie rzeczywiste - to spalanie, które sam obliczasz względem tego ile samochód przejeżdża na jednym baku.
+                            </li>
+
+                            <li>
+                                Spalanie z komputera - wartość spalania na 100 km, którą podaje komputer pokładowy.
+                            </li>
+
+                            <li>
+                                Stara korekta - liczba, którą podaje komputer pokładowy po wejściu do pozycji 19 w ukrytym menu. Jest to liczba z przedziału 800 - 1200.
+                            </li>
+                        </ul>
+
+                        <blockquote>
+                            <h5>
+                                Obliczanie rzeczywistego spalania
+                            </h5>
+
+                            <p>
+                                Jeżeli pojemność baku to 70 litrów i samochód przejeżdża na tym 1100 kilometrów, oznacza to że spalił 6.36 litra na 100 km. Oblicza się to działaniem:
+                            </p>
+                            
+                            <p>
+                                P / K * 100 = WYNIK
+                            </p>
+
+                            <p>
+                                Gdzie P to ilość paliwa, a K to ilość przejechanych kilometrów.
+                            </p>
+                        </blockquote>
+
+                        <blockquote>
+                            <h5>
+                                Ukryte menu
+                            </h5>
+
+                            <p>
+                                Instukcję jak wejść w ukryte menu znajdziesz w <a href="https://www.youtube.com/watch?v=EOEKba4yJYM">tym filmiku.</a>
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <strong>Kalkulator</strong> stworzony przez <a href="https://www.facebook.com/mikesrike0?ref=bookmarks">Michał Klawitter</a>. Wszelkie prawa zastrzeżone.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

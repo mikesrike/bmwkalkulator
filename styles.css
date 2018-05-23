@@ -1,0 +1,42 @@
+section.hero {
+    margin-bottom: 50px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.box-section {
+    padding: 20px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.box-section:last-child {
+    border-bottom: none;
+}
+
+#js-result {
+    position: relative;
+    font-size: 36px;
+    text-align: right;
+}
+
+.upper-badge {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.nodisplay {
+    display: none;
+}
+
+footer {
+    margin-top: 50px;
+}
